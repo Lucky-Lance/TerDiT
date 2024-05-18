@@ -1,0 +1,24 @@
+# Copyright (c) Facebook, Inc. and its affiliates. All rights reserved.
+#
+# This source code is licensed under the BSD license found in the
+# LICENSE file in the root directory of this source tree.
+
+codecov:
+  require_ci_to_pass: yes
+coverage:
+  status:
+    project:
+      default:
+        target: 94%
+        threshold: 0.1%
+parsers:
+  gcov:
+    branch_detection:
+      conditional: yes
+      loop: yes
+      method: no
+      macro: no
+comment:
+  layout: "reach,diff,flags,tree"
+  behavior: default
+  require_changes: no
