@@ -3,6 +3,8 @@
 Official Pytorch implementation of TerDiT as presented in paper:
 
 **TerDiT: Ternary Diffusion Models with Transformers**</br>
+*Xudong Lu, Aojun Zhou, Ziyi Lin, Qi Liu, Yuhui Xu, Renrui Zhang, Yafei Wen, Shuai Ren, Peng Gao, Junchi Yan, Hongsheng Li*</br>
+[paper](https://arxiv.org/abs/2405.14854)
 
 ![](assert/sample_ema_ternary_index.png "Sample Image")
 
@@ -31,4 +33,27 @@ Run the code for sampling (assume your ckpt is downloaded in ``checkpoints/3B_11
 python -u sample.py --ckpt checkpoints/3B_1180000 --local_diffusers_model_root  /path/to/diffusers_models --seed 42
 ```
 
+## License
 
+This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
+
+## Questions
+
+Feel free to discuss papers/code with us through issues/emails!
+
+- Xudong Lu: <a href="luxudong@link.cuhk.edu.hk">luxudong@link.cuhk.edu.hk</a> 
+
+## Citation
+
+If you find our paper and code useful in your research, please cite
+
+```
+@misc{lu2024terdit,
+      title={TerDiT: Ternary Diffusion Models with Transformers}, 
+      author={Xudong Lu and Aojun Zhou and Ziyi Lin and Qi Liu and Yuhui Xu and Renrui Zhang and Yafei Wen and Shuai Ren and Peng Gao and Junchi Yan and Hongsheng Li},
+      year={2024},
+      eprint={2405.14854},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
