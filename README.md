@@ -24,7 +24,7 @@ Step 2: Install relevant packages
     ```
 
 ## Checkpoints
-Our trained 600M and 4.2B models are provided in [huggingface](https://huggingface.co/lucky-lance/TerDiT) 🤗.
+We offer trained checkpoints for ImageNet generation at both 256x256 and 512x512 resolutions. For 256x256 resolution, we provide models with 600M and 4.2B parameters. For 512x512 resolution, we offer the 4.2B model. You can find the checkpoints on [huggingface](https://huggingface.co/lucky-lance/TerDiT) 🤗.
 
 ## Sample
 
@@ -32,6 +32,12 @@ Run the code for sampling (assume your ckpt is downloaded in ``checkpoints/3B_11
 ```bash
 python -u sample.py --ckpt checkpoints/3B_1180000 --local_diffusers_model_root  /path/to/diffusers_models --seed 42
 ```
+
+## Results
+
+TerDiT achieves competitive results with full-precision models. Notably, TerDiT-4.2B outperforms the original DiT on the ImageNet 512x512 task.
+
+![](assert/TerDiT-ImageNet.png "Sample Image")
 
 ## License
 
